@@ -18,14 +18,16 @@ struct FoodItem: View {
                 .cornerRadius(10)
                 .shadow(radius: 5)
             
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Chicken")
                     .font(.title)
                     .foregroundColor(.primary)
                 Text("Description")
                     .lineLimit(2)
             }
-        }
+        }.frame(width: 300)
+        .padding(.leading, 10)
+        .padding(.trailing, 10)
     }
 }
 
