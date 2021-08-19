@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  FoodList.swift
 //  FoodDelivery
 //
 //  Created by Bakyt Dzhumabaev on 20/8/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FoodList: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
@@ -16,6 +16,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FoodList()
     }
 }
