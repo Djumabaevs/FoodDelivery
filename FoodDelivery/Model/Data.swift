@@ -7,6 +7,8 @@
 
 import Foundation
 
+let Menu: [Food] = load("menu.json")
+
 func load <T: Decodable>(_ filename: String) -> T {
     
     let data: Data
@@ -24,6 +26,6 @@ func load <T: Decodable>(_ filename: String) -> T {
         let decoder = JSONDecoder()
         return try decoder.decode(T.self, from: data)
     } catch {
-        fatalError("Could not parse \(filename) as \(T.self):\n\(error))
+        fatalError("Could not parse \(filename) as \(T.self):\n\(error)")
     }
 }
