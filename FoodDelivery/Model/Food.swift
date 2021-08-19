@@ -14,5 +14,11 @@ struct Food: Hashable, Codable, Identifiable {
     var image: String
     var kitchen: String
     var description: String
+    
+    enum Kitchen: String, Codable, Hashable {
+        
+        case italian = "italian"
+        case chinese = "chinese"
+    }
         
 }
