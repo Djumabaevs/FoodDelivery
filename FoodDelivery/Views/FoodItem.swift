@@ -10,12 +10,22 @@ import SwiftUI
 struct FoodItem: View {
     var body: some View {
         
-        Image("chicken")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(height: 200)
-            .cornerRadius(10)
-            .shadow(radius: 5)
+        VStack(alignment: .leading) {
+            Image("chicken")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 200)
+                .cornerRadius(10)
+                .shadow(radius: 5)
+            
+            VStack {
+                Text("Chicken")
+                    .font(.title)
+                    .foregroundColor(.primary)
+                Text("Description")
+                    .lineLimit(2)
+            }
+        }
     }
 }
 
